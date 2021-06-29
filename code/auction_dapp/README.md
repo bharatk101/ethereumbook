@@ -4,32 +4,33 @@ This project aims to implement basic functionalities of an auction platform usin
 
 ## Requirements
 
-![Auction Diagram](auction_diagram.png)
+![Auction Diagram](../../.gitbook/assets/auction_diagram.png)
 
 The application should be decentralized and utilize Ethereum's stack:
 
-1. Smart contracts for business logic(auctions, bids, refund and transfer of ownership)
-2. Swarm for data storage(image and metadata)
-3. Whisper for a peer-to-peer messaging(chatrooms)
+1. Smart contracts for business logic\(auctions, bids, refund and transfer of ownership\)
+2. Swarm for data storage\(image and metadata\)
+3. Whisper for a peer-to-peer messaging\(chatrooms\)
 
 ### Deed Repository
+
 Manage non-fungible tokens by implementing an asset/token/deed repository which holds unique asset/token/deed.
 
-#### ERC: Non-fungible Token Standard #721 (NFT)
-See following link: 
-https://github.com/ethereum/eips/issues/721
+#### ERC: Non-fungible Token Standard \#721 \(NFT\)
+
+See following link: [https://github.com/ethereum/eips/issues/721](https://github.com/ethereum/eips/issues/721)
 
 ### Auction Repository
 
 Auction repository MUST act as an auction house which does the following:
 
-- Holds asset/token/deed that is to be auctioned(ERC721 Ownership by smart contract)
-- Allows users bid on auctions
-- Keeps track of auctions/bids/ownership
-- Transfers ownership of asset/token/deed to winder
-- Transfers Funds to auction creator if auction is ended and there is at least one winner
-- Cancels auction and deal with refunds
-- UI to interact with the above functionality
+* Holds asset/token/deed that is to be auctioned\(ERC721 Ownership by smart contract\)
+* Allows users bid on auctions
+* Keeps track of auctions/bids/ownership
+* Transfers ownership of asset/token/deed to winder
+* Transfers Funds to auction creator if auction is ended and there is at least one winner
+* Cancels auction and deal with refunds
+* UI to interact with the above functionality
 
 ### Front-end: Vuejs2.x + Vuetify
 
@@ -39,9 +40,9 @@ The front-end is developed using a reactive UI framework with integration of Vue
 
 #### 1. Register an ERC721 Non-Fungible Token with the AuctionDaap Deed Repository
 
-The idea of a Deed Repository is used across this project to hold any NFT with metadata attached to. A token/deed is registered by giving a unique ID and attaching metadata(TokenURI). The metadata is what makes each token important or valuable.
+The idea of a Deed Repository is used across this project to hold any NFT with metadata attached to. A token/deed is registered by giving a unique ID and attaching metadata\(TokenURI\). The metadata is what makes each token important or valuable.
 
-#### 2. Transfer Ownership of the NFT to AuctionRepository(Auction house)
+#### 2. Transfer Ownership of the NFT to AuctionRepository\(Auction house\)
 
 The Auction house needs to verify that a NFT is owned by the auction creator, therefore before the auction is created, the owner should transfer the ownership of the NFT to the AuctionRepository smart contract address.
 
@@ -51,10 +52,7 @@ Creating the auction is a simple process of entering auction details such as nam
 
 #### 4. Bid on Auction
 
-Anyone can bid on an auction except the owner of the auction. Biding means that previous bidders are refunded and new bid is placed. Bid requirements are as follow:
-1. Auction not expired
-2. Bidder is not auction owner
-3. Bid amount is greator than current bid or starting price(if no bid)
+Anyone can bid on an auction except the owner of the auction. Biding means that previous bidders are refunded and new bid is placed. Bid requirements are as follow: 1. Auction not expired 2. Bidder is not auction owner 3. Bid amount is greator than current bid or starting price\(if no bid\)
 
 #### 5. Refunds
 
