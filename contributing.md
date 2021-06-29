@@ -10,11 +10,11 @@ You can chat with the authors and editors on [Gitter chat](https://gitter.im/eth
 
 ## License and attribution
 
-All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a CC-BY license (Creative Commons Attribution). You are responsible for adding your own name or pseudonym in the Acknowledgments section in the [Preface](preface.asciidoc), as attribution for your contribution.
+All contributions must be properly licensed and attributed. If you are contributing your own original work, then you are offering it under a CC-BY license \(Creative Commons Attribution\). You are responsible for adding your own name or pseudonym in the Acknowledgments section in the [Preface](https://github.com/bharatk101/ethereumbook/tree/96677b615b9a9a3f56c1ad6563769171140d7e4f/preface.asciidoc), as attribution for your contribution.
 
 If you are sourcing a contribution from somewhere else, it must carry a compatible license. The book will initially be released under a CC-BY-NC-ND license which means that contributions must be licensed under open licenses such as MIT, CC0, CC-BY, etc. You need to indicate the original source and original license, by including an asciidoc markup comment above your contribution, like this:
 
-```asciidoc
+```text
 ////
 Source: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
 License: CC0
@@ -48,20 +48,21 @@ Create a [new Issue](https://github.com/ethereumbook/ethereumbook/issues/new) no
 
 Adjust heading style in each section as follows:
 
-1. Only the chapter/section should be level 2, everything else should be level 3 and below (level 1 is the book title itself). Each asciidoc file should start with a "==" heading.
-2. All lower case, except for first letter, proper nouns and acronyms. "What is this thing?", "What is the Ethereum sprocket?" "Who created the Ethereum Name Service (ENS)"
+1. Only the chapter/section should be level 2, everything else should be level 3 and below \(level 1 is the book title itself\). Each asciidoc file should start with a "==" heading.
+2. All lower case, except for first letter, proper nouns and acronyms. "What is this thing?", "What is the Ethereum sprocket?" "Who created the Ethereum Name Service \(ENS\)"
 3. Acronyms are spelled out, capitalized, with the acronym in parentheses. Once you have spelled out an acronym in one heading, we can keep it as an acronym in subsequent headings.
-4. No period at the end. Question mark if it is a question (generally avoid question headings, unless really appropriate)
-5. Should include a unique anchor (see #279), all lower case, underscore separated.
+4. No period at the end. Question mark if it is a question \(generally avoid question headings, unless really appropriate\)
+5. Should include a unique anchor \(see \#279\), all lower case, underscore separated.
 6. Headings should be followed by a blank line.
-7. Heading should be followed by a paragraph of text, not a lower-level heading without any text. If you find one like this, add a TODO comment (line of 4 slashes "////", line with "TODO: add paragraph", line of 4 slashes)
+7. Heading should be followed by a paragraph of text, not a lower-level heading without any text. If you find one like this, add a TODO comment \(line of 4 slashes "////", line with "TODO: add paragraph", line of 4 slashes\)
 
 ## Line endings
 
-All submission should use Unix-like line endings: LF (not CR, not CR/LF). All the postprocessing is done on Unix-like systems. Incorrect line endings, or changes to line endings cause confusion for the diff tools and make the whole file look like it has changed.
+All submission should use Unix-like line endings: LF \(not CR, not CR/LF\). All the postprocessing is done on Unix-like systems. Incorrect line endings, or changes to line endings cause confusion for the diff tools and make the whole file look like it has changed.
 
 If you are unsure or your OS makes things difficult, consider using a developer's text editor such as Atom.
 
 ## Thanks
 
 We are very grateful for the support of the entire Ethereum community. With your help, this will be a great book that can help thousands of developers get started and eventually "master" Ethereum. Thank you!
+
